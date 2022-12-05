@@ -68,3 +68,16 @@ const teamList = [
 ]
 
 console.log(teamList);
+
+//recupero div dal dom per stampare info in pagina:
+const myDiv = document.getElementById('team_info');
+
+let memberz = JSON.stringify(teamList);
+myDiv.append(memberz);
+
+
+
+    
+
+
+
