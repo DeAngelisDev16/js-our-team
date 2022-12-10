@@ -80,9 +80,9 @@ const myDiv = document.querySelector('.team_members');
      myDiv.innerHTML+=
      
      `<div>
-        <h2>${teamList[i].firstname} ${teamList[i].lastname} </h2>
+        <h2 class="py-2">${teamList[i].firstname} ${teamList[i].lastname} </h2>
         <h2>${teamList[i].role} </h2>
-        <img src="./imgs/${teamList[i].image}" alt="">
+        <img class="mb-5"src="./imgs/${teamList[i].image}" alt="">
      </div>
      
      `
