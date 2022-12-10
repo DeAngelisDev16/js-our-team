@@ -79,9 +79,11 @@ const myDiv = document.querySelector('.team_members');
  for (let i = 0; i < teamList.length; i++){
      myDiv.innerHTML+=
      
-     `<h2>${teamList[i].firstname} ${teamList[i].lastname} </h2>
-     <h2>${teamList[i].role} </h2>
-     
+     `<div>
+        <h2>${teamList[i].firstname} ${teamList[i].lastname} </h2>
+        <h2>${teamList[i].role} </h2>
+        <img src="./imgs/${teamList[i].image}" alt="">
+     </div>
      
      `
      
