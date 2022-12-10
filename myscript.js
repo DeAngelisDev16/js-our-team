@@ -66,19 +66,32 @@ const teamList = [
 
     },
 ]
-
-console.log(teamList);
+//MILESTONE1:
+for(let i = 0; i < teamList.length; i++){
+    console.log(teamList[i]);
+}
 
 //recupero div dal dom per stampare info in pagina:
-const myDiv = document.getElementById('team_info');
+const myDiv = document.querySelector('.team_members');
 
 
+//MILESTONE2:
  for (let i = 0; i < teamList.length; i++){
-    let members = JSON.stringify(teamList[i]);
-    //console.log(members);
-    myDiv.append(members);
+     myDiv.innerHTML+=
+     
+     `<h2>${teamList[i].firstname} ${teamList[i].lastname} </h2>
+     <h2>${teamList[i].role} </h2>
+     
+     
+     `
+     
 
  }
+    
+    
+
+    
+ 
 
 
     
